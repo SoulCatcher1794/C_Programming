@@ -7,7 +7,7 @@ int main(void){
     int wordCount=0, repeatCounter=0, skip=0;
     
     //Define word length
-    while(word[i] != '\n'){
+    while(word[i] != '\0'){
         wordCount++;
         i++;
     }
@@ -27,7 +27,6 @@ int main(void){
     //Count of repetitive letters
     for(k=0; k<wordCount-1; k++){
         if((word[k] == word[k+1]) && !skip){
-            //repeatCounter++;
             skip=1;
         }else{
             skip=0;
