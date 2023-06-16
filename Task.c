@@ -27,6 +27,7 @@ int main(void){
     //Count of repetitive letters
     for(k=0; k<wordCount-1; k++){
         if((word[k] == word[k+1]) && !skip){
+            
             skip=1;
         }else{
             skip=0;
