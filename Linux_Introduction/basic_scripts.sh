@@ -30,4 +30,7 @@ find #use to find directories or files in the file system
 find . -name "filename" # used to find in the current directory the file with name: filename
 find / -name "hello" 2 > /dev/null #sending 2nd return parameter of the command into null (nowhere)
 
+ar rcs library_name.a object_to_include.o
+# archive commands r->replace .o file is already part of your library, c->create it doesn't
+# exist, and s->creates an index for fast access.
 
